@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int calculate_angle_hour_hand_minute_hand ( double h, double m ) ;\n"
+    ],
+    "Function Implementations": [
+        "int calculate_angle_hour_hand_minute_hand ( double h, double m ) {\nif ( h < 0 || m < 0 || h > 12 || m > 60 ) printf ( \"Wrong input\" );\nif ( h == 12 ) h = 0;\nif ( m == 60 ) m = 0;\nint hour_angle = 0.5 * ( h * 60 + m );\nint minute_angle = 6 * m;\nint angle = abs ( hour_angle - minute_angle );\nangle = min ( 360 - angle, angle );\nreturn angle;\n}\n\n"
+    ],
+    "Enums": []
+}

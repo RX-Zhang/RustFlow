@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int number_unique_rectangles_formed_using_n_unit_squares ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int number_unique_rectangles_formed_using_n_unit_squares ( int n ) {\nint ans = 0;\nfor ( int length = 1;\nlength <= sqrt ( n );\n++ length ) for ( int height = length;\nheight * length <= n;\n++ height ) ans ++;\nreturn ans;\n}\n\n"
+    ],
+    "Enums": []
+}

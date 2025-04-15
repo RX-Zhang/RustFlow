@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int add_two_numbers_without_using_arithmetic_operators ( int x, int y ) ;\n"
+    ],
+    "Function Implementations": [
+        "int add_two_numbers_without_using_arithmetic_operators ( int x, int y ) {\nwhile ( y != 0 ) {\nint carry = x & y;\nx = x ^ y;\ny = carry << 1;\n}\nreturn x;\n}\n\n"
+    ],
+    "Enums": []
+}

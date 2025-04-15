@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int primality_test_set_5using_lucas_lehmer_series ( int p ) ;\n"
+    ],
+    "Function Implementations": [
+        "int primality_test_set_5using_lucas_lehmer_series ( int p ) {\nlong long checkNumber = pow ( 2, p ) - 1;\nlong long nextval = 4 % checkNumber;\nfor ( int i = 1;\ni < p - 1;\ni ++ ) nextval = ( nextval * nextval - 2 ) % checkNumber;\nif(nextval == 0) return 1;\nelse return 0;\n}\n\n"
+    ],
+    "Enums": []
+}

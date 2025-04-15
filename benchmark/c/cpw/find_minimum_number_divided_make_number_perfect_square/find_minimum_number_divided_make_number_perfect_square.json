@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int find_minimum_number_divided_make_number_perfect_square ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int find_minimum_number_divided_make_number_perfect_square ( int n ) {\nint count = 0, ans = 1;\nwhile ( n % 2 == 0 ) {\ncount ++;\nn /= 2;\n}\nif ( count % 2 ) ans *= 2;\nfor ( int i = 3;\ni <= sqrt ( n );\ni += 2 ) {\ncount = 0;\nwhile ( n % i == 0 ) {\ncount ++;\nn /= i;\n}\nif ( count % 2 ) ans *= i;\n}\nif ( n > 2 ) ans *= n;\nreturn ans;\n}\n\n"
+    ],
+    "Enums": []
+}

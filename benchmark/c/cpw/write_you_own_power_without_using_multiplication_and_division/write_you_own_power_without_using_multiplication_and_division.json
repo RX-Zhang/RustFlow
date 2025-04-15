@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int write_you_own_power_without_using_multiplication_and_division ( int a, int b ) ;\n"
+    ],
+    "Function Implementations": [
+        "int write_you_own_power_without_using_multiplication_and_division ( int a, int b ) {\nif ( b == 0 ) return 1;\nint answer = a;\nint increment = a;\nint i, j;\nfor ( i = 1;\ni < b;\ni ++ ) {\nfor ( j = 1;\nj < a;\nj ++ ) {\nanswer += increment;\n}\nincrement = answer;\n}\nreturn answer;\n}\n\n"
+    ],
+    "Enums": []
+}

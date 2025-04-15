@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "unsigned int fast_multiplication_method_without_using_multiplication_operator_russian_peasants_algorithm ( unsigned int a, unsigned int b ) ;\n"
+    ],
+    "Function Implementations": [
+        "unsigned int fast_multiplication_method_without_using_multiplication_operator_russian_peasants_algorithm ( unsigned int a, unsigned int b ) {\nint res = 0;\nwhile ( b > 0 ) {\nif ( b & 1 ) res = res + a;\na = a << 1;\nb = b >> 1;\n}\nreturn res;\n}\n\n"
+    ],
+    "Enums": []
+}

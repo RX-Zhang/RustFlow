@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int sum_of_all_elements_up_to_nth_row_in_a_pascals_triangle ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int sum_of_all_elements_up_to_nth_row_in_a_pascals_triangle ( int n ) {\nlong int sum = 0;\nfor ( int row = 0;\nrow < n;\nrow ++ ) {\nsum = sum + ( 1 << row );\n}\nreturn sum;\n}\n\n"
+    ],
+    "Enums": []
+}

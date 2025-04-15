@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int write_one_line_c_function_to_find_whether_a_no_is_power_of_two ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int write_one_line_c_function_to_find_whether_a_no_is_power_of_two ( int n ) {\nif ( n == 0 ) return 0;\nwhile ( n != 1 ) {\nif ( n % 2 != 0 ) return 0;\nn = n / 2;\n}\nreturn 1;\n}\n\n"
+    ],
+    "Enums": []
+}

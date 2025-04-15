@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int write_a_c_program_to_find_the_parity_of_an_unsigned_integer ( unsigned int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int write_a_c_program_to_find_the_parity_of_an_unsigned_integer ( unsigned int n ) {\nbool parity = 0;\nwhile ( n ) {\nparity = ! parity;\nn = n & ( n - 1 );\n}\nreturn parity;\n}\n\n"
+    ],
+    "Enums": []
+}

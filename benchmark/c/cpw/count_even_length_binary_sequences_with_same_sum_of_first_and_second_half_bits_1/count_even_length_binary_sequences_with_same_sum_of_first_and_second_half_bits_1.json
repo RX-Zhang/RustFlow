@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_even_length_binary_sequences_with_same_sum_of_first_and_second_half_bits_1 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_even_length_binary_sequences_with_same_sum_of_first_and_second_half_bits_1 ( int n ) {\nint nCr = 1, res = 1;\nfor ( int r = 1;\nr <= n;\nr ++ ) {\nnCr = ( nCr * ( n + 1 - r ) ) / r;\nres += nCr * nCr;\n}\nreturn res;\n}\n\n"
+    ],
+    "Enums": []
+}

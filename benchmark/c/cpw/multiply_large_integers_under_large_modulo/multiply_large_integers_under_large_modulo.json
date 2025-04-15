@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "long long multiply_large_integers_under_large_modulo ( long long a, long long b, long long mod ) ;\n"
+    ],
+    "Function Implementations": [
+        "long long multiply_large_integers_under_large_modulo ( long long a, long long b, long long mod ) {\nlong long res = 0;\na %= mod;\nwhile ( b ) {\nif ( b & 1 ) res = ( res + a ) % mod;\na = ( 2 * a ) % mod;\nb >>= 1;\n}\nreturn res;\n}\n\n"
+    ],
+    "Enums": []
+}

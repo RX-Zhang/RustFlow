@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int smallest_of_three_integers_without_comparison_operators ( int x, int y, int z ) ;\n"
+    ],
+    "Function Implementations": [
+        "int smallest_of_three_integers_without_comparison_operators ( int x, int y, int z ) {\nint c = 0;\nwhile ( x && y && z ) {\nx --;\ny --;\nz --;\nc ++;\n}\nreturn c;\n}\n\n"
+    ],
+    "Enums": []
+}

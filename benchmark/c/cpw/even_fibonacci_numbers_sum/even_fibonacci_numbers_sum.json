@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int even_fibonacci_numbers_sum ( int limit ) ;\n"
+    ],
+    "Function Implementations": [
+        "int even_fibonacci_numbers_sum ( int limit ) {\nif ( limit < 2 ) return 0;\nlong int ef1 = 0, ef2 = 2;\nlong int sum = ef1 + ef2;\nwhile ( ef2 <= limit ) {\nlong int ef3 = 4 * ef2 + ef1;\nif ( ef3 > limit ) break;\nef1 = ef2;\nef2 = ef3;\nsum += ef2;\n}\nreturn sum;\n}\n\n"
+    ],
+    "Enums": []
+}

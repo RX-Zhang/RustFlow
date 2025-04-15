@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int check_if_a_number_is_jumbled_or_not ( int num ) ;\n"
+    ],
+    "Function Implementations": [
+        "int check_if_a_number_is_jumbled_or_not ( int num ) {\nif ( num / 10 == 0 ) return 1;\nwhile ( num != 0 ) {\nif ( num / 10 == 0 ) return 1;\nint digit1 = num % 10;\nint digit2 = ( num / 10 ) % 10;\nif ( abs ( digit2 - digit1 ) > 1 ) return 0;\nnum = num / 10;\n}\nreturn 1;\n}\n\n"
+    ],
+    "Enums": []
+}

@@ -1,0 +1,16 @@
+
+fn painting_fence_algorithm(n: i32, k: i32) -> i64 {
+    let mut total: i64 = k as i64;
+    let modulo: i32 = 1000000007;
+    let mut same: i64 = 0;
+    let mut diff: i64 = k as i64;
+
+    for i in 2..=n {
+        same = diff;
+        diff = total.wrapping_mul((k - 1) as i64);
+        diff = diff.wrapping_rem(modulo as i64);
+        total = (same.wrapping_add(diff)).wrapping_rem(modulo as i64);
+    }
+    
+    total
+}

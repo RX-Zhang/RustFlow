@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "unsigned int next_power_of_2_2 ( unsigned int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "unsigned int next_power_of_2_2 ( unsigned int n ) {\nn --;\nn |= n >> 1;\nn |= n >> 2;\nn |= n >> 4;\nn |= n >> 8;\nn |= n >> 16;\nn ++;\nreturn n;\n}\n\n"
+    ],
+    "Enums": []
+}

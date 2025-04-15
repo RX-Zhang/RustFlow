@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int number_is_divisible_by_29_or_not ( long int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int number_is_divisible_by_29_or_not ( long int n ) {\nwhile ( n / 100 ) {\nint last_digit = n % 10;\nn /= 10;\nn += last_digit * 3;\n}\nreturn ( n % 29 == 0 );\n}\n\n"
+    ],
+    "Enums": []
+}

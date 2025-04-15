@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int compute_n_under_modulo_p ( int n, int p ) ;\n"
+    ],
+    "Function Implementations": [
+        "int compute_n_under_modulo_p ( int n, int p ) {\nif ( n >= p ) return 0;\nint result = 1;\nfor ( int i = 1;\ni <= n;\ni ++ ) result = ( result * i ) % p;\nreturn result;\n}\n\n"
+    ],
+    "Enums": []
+}

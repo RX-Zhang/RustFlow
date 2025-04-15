@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int n_th_number_whose_sum_of_digits_is_ten_1 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int n_th_number_whose_sum_of_digits_is_ten_1 ( int n ) {\nint count = 0;\nfor ( int curr = 19;\n;\ncurr += 9 ) {\nint sum = 0;\nfor ( int x = curr;\nx > 0;\nx = x / 10 ) sum = sum + x % 10;\nif ( sum == 10 ) count ++;\nif ( count == n ) return curr;\n}\nreturn - 1;\n}\n\n"
+    ],
+    "Enums": []
+}

@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int hardy_ramanujan_theorem ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int hardy_ramanujan_theorem ( int n ) {\nint count = 0;\nif ( n % 2 == 0 ) {\ncount ++;\nwhile ( n % 2 == 0 ) n = n / 2;\n}\nfor ( int i = 3;\ni <= sqrt ( n );\ni = i + 2 ) {\nif ( n % i == 0 ) {\ncount ++;\nwhile ( n % i == 0 ) n = n / i;\n}\n}\nif ( n > 2 ) count ++;\nreturn count;\n}\n\n"
+    ],
+    "Enums": []
+}

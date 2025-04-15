@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int steins_algorithm_for_finding_gcd_1 ( int a, int b ) ;\n"
+    ],
+    "Function Implementations": [
+        "int steins_algorithm_for_finding_gcd_1 ( int a, int b ) {\nif ( a == b ) return a;\nif ( a == 0 ) return b;\nif ( b == 0 ) return a;\nif ( ~ a & 1 ) {\nif ( b & 1 ) return steins_algorithm_for_finding_gcd_1 ( a >> 1, b );\nelse return steins_algorithm_for_finding_gcd_1 ( a >> 1, b >> 1 ) << 1;\n}\nif ( ~ b & 1 ) return steins_algorithm_for_finding_gcd_1 ( a, b >> 1 );\nif ( a > b ) return steins_algorithm_for_finding_gcd_1 ( ( a - b ) >> 1, b );\nreturn steins_algorithm_for_finding_gcd_1 ( ( b - a ) >> 1, a );\n}\n\n"
+    ],
+    "Enums": []
+}

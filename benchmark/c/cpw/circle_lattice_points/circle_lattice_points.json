@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int circle_lattice_points ( int r ) ;\n"
+    ],
+    "Function Implementations": [
+        "int circle_lattice_points ( int r ) {\nif ( r <= 0 ) return 0;\nint result = 4;\nfor ( int x = 1;\nx < r;\nx ++ ) {\nint ySquare = r * r - x * x;\nint y = sqrt ( ySquare );\nif ( y * y == ySquare ) result += 4;\n}\nreturn result;\n}\n\n"
+    ],
+    "Enums": []
+}

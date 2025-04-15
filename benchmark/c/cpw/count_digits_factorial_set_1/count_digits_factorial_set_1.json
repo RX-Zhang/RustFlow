@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_digits_factorial_set_1 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_digits_factorial_set_1 ( int n ) {\nif ( n < 0 ) return 0;\nif ( n <= 1 ) return 1;\ndouble digits = 0;\nfor ( int i = 2;\ni <= n;\ni ++ ) digits += log10 ( i );\nreturn floor ( digits ) + 1;\n}\n\n"
+    ],
+    "Enums": []
+}

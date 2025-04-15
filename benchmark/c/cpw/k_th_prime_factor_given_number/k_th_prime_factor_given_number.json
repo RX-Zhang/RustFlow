@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int k_th_prime_factor_given_number ( int n, int k ) ;\n"
+    ],
+    "Function Implementations": [
+        "int k_th_prime_factor_given_number ( int n, int k ) {\nwhile ( n % 2 == 0 ) {\nk --;\nn = n / 2;\nif ( k == 0 ) return 2;\n}\nfor ( int i = 3;\ni <= sqrt ( n );\ni = i + 2 ) {\nwhile ( n % i == 0 ) {\nif ( k == 1 ) return i;\nk --;\nn = n / i;\n}\n}\nif ( n > 2 && k == 1 ) return n;\nreturn - 1;\n}\n\n"
+    ],
+    "Enums": []
+}

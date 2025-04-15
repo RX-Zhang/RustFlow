@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int sum_factors_number ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int sum_factors_number ( int n ) {\nint result = 0;\nfor ( int i = 2;\ni <= sqrt ( n );\ni ++ ) {\nif ( n % i == 0 ) {\nif ( i == ( n / i ) ) result += i;\nelse result += ( i + n / i );\n}\n}\nreturn ( result + n + 1 );\n}\n\n"
+    ],
+    "Enums": []
+}

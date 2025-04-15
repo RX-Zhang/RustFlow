@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_factorial_numbers_in_a_given_range ( int low, int high ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_factorial_numbers_in_a_given_range ( int low, int high ) {\nint fact = 1, x = 1;\nwhile ( fact < low ) {\nfact = fact * x;\nx ++;\n}\nint res = 0;\nwhile ( fact <= high ) {\nres ++;\nfact = fact * x;\nx ++;\n}\nreturn res;\n}\n\n"
+    ],
+    "Enums": []
+}

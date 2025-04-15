@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "long long find_largest_prime_factor_number ( long long n ) ;\n"
+    ],
+    "Function Implementations": [
+        "long long find_largest_prime_factor_number ( long long n ) {\nlong long maxPrime = - 1;\nwhile ( n % 2 == 0 ) {\nmaxPrime = 2;\nn >>= 1;\n}\nfor ( int i = 3;\ni <= sqrt ( n );\ni += 2 ) {\nwhile ( n % i == 0 ) {\nmaxPrime = i;\nn = n / i;\n}\n}\nif ( n > 2 ) maxPrime = n;\nreturn maxPrime;\n}\n\n"
+    ],
+    "Enums": []
+}

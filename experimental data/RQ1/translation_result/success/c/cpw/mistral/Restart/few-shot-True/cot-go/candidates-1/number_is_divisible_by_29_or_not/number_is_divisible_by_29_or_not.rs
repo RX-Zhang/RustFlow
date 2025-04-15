@@ -1,0 +1,61 @@
+
+use std::convert::TryInto;
+
+fn number_is_divisible_by_29_or_not(n: i64) -> bool {
+    let mut n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(1);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(2);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(4);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(5);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(6);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(7);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(8);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(9);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(10);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(11);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(12);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(13);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(14);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(15);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(16);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(17);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(18);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(19);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(20);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(21);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(22);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(23);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(24);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(25);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(26);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(27);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n = n.wrapping_shr(28);
+    n = n.wrapping_add(13 * ((n.abs() % 10) as i64 * 3).wrapping_shr(33));
+    n % 29 == 0
+}

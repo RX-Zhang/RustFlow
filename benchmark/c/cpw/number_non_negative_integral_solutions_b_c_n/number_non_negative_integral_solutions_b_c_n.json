@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int number_non_negative_integral_solutions_b_c_n ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int number_non_negative_integral_solutions_b_c_n ( int n ) {\nint result = 0;\nfor ( int i = 0;\ni <= n;\ni ++ ) for ( int j = 0;\nj <= n - i;\nj ++ ) for ( int k = 0;\nk <= ( n - i - j );\nk ++ ) if ( i + j + k == n ) result ++;\nreturn result;\n}\n\n"
+    ],
+    "Enums": []
+}

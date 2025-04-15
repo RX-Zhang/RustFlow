@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int k_th_digit_raised_power_b ( int a, int b, int k ) ;\n"
+    ],
+    "Function Implementations": [
+        "int k_th_digit_raised_power_b ( int a, int b, int k ) {\nint p = pow ( a, b );\nint count = 0;\nwhile ( p > 0 && count < k ) {\nint rem = p % 10;\ncount ++;\nif ( count == k ) return rem;\np = p / 10;\n}\nreturn 0;\n}\n\n"
+    ],
+    "Enums": []
+}

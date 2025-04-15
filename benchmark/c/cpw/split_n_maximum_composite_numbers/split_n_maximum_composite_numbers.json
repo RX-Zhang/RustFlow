@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int split_n_maximum_composite_numbers ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int split_n_maximum_composite_numbers ( int n ) {\nif ( n < 4 ) return - 1;\nint rem = n % 4;\nif ( rem == 0 ) return n / 4;\nif ( rem == 1 ) {\nif ( n < 9 ) return - 1;\nreturn ( n - 9 ) / 4 + 1;\n}\nif ( rem == 2 ) return ( n - 6 ) / 4 + 1;\nif ( rem == 3 ) {\nif ( n < 15 ) return - 1;\nreturn ( n - 15 ) / 4 + 2;\n}\n}\n\n"
+    ],
+    "Enums": []
+}
