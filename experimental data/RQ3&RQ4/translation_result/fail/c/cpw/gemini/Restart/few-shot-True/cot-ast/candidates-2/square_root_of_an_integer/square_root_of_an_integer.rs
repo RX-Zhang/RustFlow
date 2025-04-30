@@ -1,0 +1,13 @@
+
+fn square_root_of_an_integer(x: i32) -> i32 {
+    if x == 0 || x == 1 {
+        return x;
+    }
+    let mut i = 1;
+    let mut result = 1;
+    while result <= x {
+        i += 1;
+        result = i * i;
+    }
+    i - 1
+}

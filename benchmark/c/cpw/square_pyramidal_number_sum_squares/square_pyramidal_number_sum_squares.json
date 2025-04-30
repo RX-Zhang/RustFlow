@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int square_pyramidal_number_sum_squares ( int s ) ;\n"
+    ],
+    "Function Implementations": [
+        "int square_pyramidal_number_sum_squares ( int s ) {\nint sum = 0;\nfor ( int n = 1;\nsum < s;\nn ++ ) {\nsum += n * n;\nif ( sum == s ) return n;\n}\nreturn - 1;\n}\n\n"
+    ],
+    "Enums": []
+}

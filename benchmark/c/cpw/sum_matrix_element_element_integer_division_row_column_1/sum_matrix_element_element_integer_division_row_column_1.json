@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int sum_matrix_element_element_integer_division_row_column_1 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int sum_matrix_element_element_integer_division_row_column_1 ( int n ) {\nint ans = 0, temp = 0, num;\nfor ( int i = 1;\ni <= n && temp < n;\ni ++ ) {\ntemp = i - 1;\nnum = 1;\nwhile ( temp < n ) {\nif ( temp + i <= n ) ans += ( i * num );\nelse ans += ( ( n - temp ) * num );\ntemp += i;\nnum ++;\n}\n}\nreturn ans;\n}\n\n"
+    ],
+    "Enums": []
+}

@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int fibonacci_modulo_p ( int p ) ;\n"
+    ],
+    "Function Implementations": [
+        "int fibonacci_modulo_p ( int p ) {\nint first = 1, second = 1, number = 2, next = 1;\nwhile ( next ) {\nnext = ( first + second ) % p;\nfirst = second;\nsecond = next;\nnumber ++;\n}\nreturn number;\n}\n\n"
+    ],
+    "Enums": []
+}

@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int triangular_numbers ( int num ) ;\n"
+    ],
+    "Function Implementations": [
+        "int triangular_numbers ( int num ) {\nif ( num < 0 ) return 0;\nint sum = 0;\nfor ( int n = 1;\nsum <= num;\nn ++ ) {\nsum = sum + n;\nif ( sum == num ) return 1;\n}\nreturn 0;\n}\n\n"
+    ],
+    "Enums": []
+}

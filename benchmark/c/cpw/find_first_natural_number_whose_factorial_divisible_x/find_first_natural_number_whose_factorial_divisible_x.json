@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int find_first_natural_number_whose_factorial_divisible_x ( int x ) ;\n"
+    ],
+    "Function Implementations": [
+        "int find_first_natural_number_whose_factorial_divisible_x ( int x ) {\nint i = 1;\nint fact = 1;\nfor ( i = 1;\ni < x;\ni ++ ) {\nfact = fact * i;\nif ( fact % x == 0 ) break;\n}\nreturn i;\n}\n\n"
+    ],
+    "Enums": []
+}

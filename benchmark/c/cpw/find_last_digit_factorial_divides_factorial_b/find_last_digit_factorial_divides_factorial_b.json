@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int find_last_digit_factorial_divides_factorial_b ( long int A, long int B ) ;\n"
+    ],
+    "Function Implementations": [
+        "int find_last_digit_factorial_divides_factorial_b ( long int A, long int B ) {\nint variable = 1;\nif ( A == B ) return 1;\nelse if ( ( B - A ) >= 5 ) return 0;\nelse {\nfor ( long int i = A + 1;\ni <= B;\ni ++ ) variable = ( variable * ( i % 10 ) ) % 10;\nreturn variable % 10;\n}\n}\n\n"
+    ],
+    "Enums": []
+}

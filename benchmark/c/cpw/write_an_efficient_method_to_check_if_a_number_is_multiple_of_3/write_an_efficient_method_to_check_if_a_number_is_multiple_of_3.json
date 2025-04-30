@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int write_an_efficient_method_to_check_if_a_number_is_multiple_of_3 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int write_an_efficient_method_to_check_if_a_number_is_multiple_of_3 ( int n ) {\nint odd_count = 0;\nint even_count = 0;\nif ( n < 0 ) n = - n;\nif ( n == 0 ) return 1;\nif ( n == 1 ) return 0;\nwhile ( n ) {\nif ( n & 1 ) odd_count ++;\nif ( n & 2 ) even_count ++;\nn = n >> 2;\n}\nreturn write_an_efficient_method_to_check_if_a_number_is_multiple_of_3 ( abs ( odd_count - even_count ) );\n}\n\n"
+    ],
+    "Enums": []
+}

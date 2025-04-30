@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int triangular_numbers_1 ( int num ) ;\n"
+    ],
+    "Function Implementations": [
+        "int triangular_numbers_1 ( int num ) {\nif ( num < 0 ) return 0;\nint c = ( - 2 * num );\nint b = 1, a = 1;\nint d = ( b * b ) - ( 4 * a * c );\nif ( d < 0 ) return 0;\nfloat root1 = ( - b + sqrt ( d ) ) / ( 2 * a );\nfloat root2 = ( - b - sqrt ( d ) ) / ( 2 * a );\nif ( root1 > 0 && floor ( root1 ) == root1 ) return 1;\nif ( root2 > 0 && floor ( root2 ) == root2 ) return 1;\nreturn 0;\n}\n\n"
+    ],
+    "Enums": []
+}

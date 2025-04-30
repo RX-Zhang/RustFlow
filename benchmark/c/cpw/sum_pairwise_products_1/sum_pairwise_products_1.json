@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int sum_pairwise_products_1 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int sum_pairwise_products_1 ( int n ) {\nlong int multiTerms = n * ( n + 1 ) / 2;\nlong int sum = multiTerms;\nfor ( int i = 2;\ni <= n;\ni ++ ) {\nmultiTerms = multiTerms - ( i - 1 );\nsum = sum + multiTerms * i;\n}\nreturn sum;\n}\n\n"
+    ],
+    "Enums": []
+}

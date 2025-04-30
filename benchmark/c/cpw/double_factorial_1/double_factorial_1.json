@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "unsigned int double_factorial_1 ( unsigned int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "unsigned int double_factorial_1 ( unsigned int n ) {\nint res = 1;\nfor ( int i = n;\ni >= 0;\ni = i - 2 ) {\nif ( i == 0 || i == 1 ) return res;\nelse res *= i;\n}\n}\n\n"
+    ],
+    "Enums": []
+}

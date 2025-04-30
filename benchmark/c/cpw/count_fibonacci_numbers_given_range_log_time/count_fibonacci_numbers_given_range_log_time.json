@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_fibonacci_numbers_given_range_log_time ( int low, int high ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_fibonacci_numbers_given_range_log_time ( int low, int high ) {\nint f1 = 0, f2 = 1, f3 = 1;\nint result = 0;\nwhile ( f1 <= high ) {\nif ( f1 >= low ) result ++;\nf1 = f2;\nf2 = f3;\nf3 = f1 + f2;\n}\nreturn result;\n}\n\n"
+    ],
+    "Enums": []
+}

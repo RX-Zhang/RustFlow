@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int check_number_is_perfect_square_using_additionsubtraction ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int check_number_is_perfect_square_using_additionsubtraction ( int n ) {\nfor ( int sum = 0, i = 1; sum < n; i += 2 ) {\nsum += i;\nif ( sum == n ) return 1;\n}\nreturn 0;\n}\n\n"
+    ],
+    "Enums": []
+}

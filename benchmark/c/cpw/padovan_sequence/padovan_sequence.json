@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int padovan_sequence ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int padovan_sequence ( int n ) {\nint pPrevPrev = 1, pPrev = 1, pCurr = 1, pNext = 1;\nfor ( int i = 3;\ni <= n;\ni ++ ) {\npNext = pPrevPrev + pPrev;\npPrevPrev = pPrev;\npPrev = pCurr;\npCurr = pNext;\n}\nreturn pNext;\n}\n\n"
+    ],
+    "Enums": []
+}

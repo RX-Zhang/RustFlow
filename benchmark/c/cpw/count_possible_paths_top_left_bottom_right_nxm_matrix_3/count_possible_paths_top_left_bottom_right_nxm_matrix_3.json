@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_possible_paths_top_left_bottom_right_nxm_matrix_3 ( int m, int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_possible_paths_top_left_bottom_right_nxm_matrix_3 ( int m, int n ) {\nint path = 1;\nfor ( int i = n;\ni < ( m + n - 1 );\ni ++ ) {\npath *= i;\npath /= ( i - n + 1 );\n}\nreturn path;\n}\n\n"
+    ],
+    "Enums": []
+}

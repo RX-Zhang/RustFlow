@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "float sum_series_23_45_67_89_upto_n_terms ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "float sum_series_23_45_67_89_upto_n_terms ( int n ) {\nint i = 1;\ndouble res = 0.0;\nbool sign = 1;\nwhile ( n > 0 ) {\nn --;\nif ( sign ) {\nsign = ! sign;\nres = res + ( double ) ++ i / ++ i;\n}\nelse {\nsign = ! sign;\nres = res - ( double ) ++ i / ++ i;\n}\n}\nreturn res;\n}\n\n"
+    ],
+    "Enums": []
+}

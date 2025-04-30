@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int find_minimum_sum_factors_number ( int num ) ;\n"
+    ],
+    "Function Implementations": [
+        "int find_minimum_sum_factors_number ( int num ) {\nint sum = 0;\nfor ( int i = 2;\ni * i <= num;\ni ++ ) {\nwhile ( num % i == 0 ) {\nsum += i;\nnum /= i;\n}\n}\nsum += num;\nreturn sum;\n}\n\n"
+    ],
+    "Enums": []
+}

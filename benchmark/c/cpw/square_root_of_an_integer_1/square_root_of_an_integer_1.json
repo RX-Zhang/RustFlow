@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int square_root_of_an_integer_1 ( int x ) ;\n"
+    ],
+    "Function Implementations": [
+        "int square_root_of_an_integer_1 ( int x ) {\nif ( x == 0 || x == 1 ) return x;\nint start = 1, end = x, ans;\nwhile ( start <= end ) {\nint mid = ( start + end ) / 2;\nif ( mid * mid == x ) return mid;\nif ( mid * mid < x ) {\nstart = mid + 1;\nans = mid;\n}\nelse end = mid - 1;\n}\nreturn ans;\n}\n\n"
+    ],
+    "Enums": []
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/transpilations/c/libopenaptx/claude3/Restart/few-shot-False/cot-False/candidates-1/comp-fix-msft/sem-fix-base/aptxhd_pack_codeword/wspace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/transpilations/c/libopenaptx/claude3/Restart/few-shot-True/cot-ast/candidates-1/comp-fix-msft/sem-fix-base/aptxhd_pack_codeword/wspace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/transpilations/c/libopenaptx/claude3/Restart/few-shot-True/cot-ast/candidates-1/comp-fix-msft/sem-fix-base/aptxhd_unpack_codeword/wspace" vcs="Git" />
+  </component>
+</project>

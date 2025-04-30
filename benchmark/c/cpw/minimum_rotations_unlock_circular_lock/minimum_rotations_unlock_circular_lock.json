@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int minimum_rotations_unlock_circular_lock ( int input, int unlock_code ) ;\n"
+    ],
+    "Function Implementations": [
+        "int minimum_rotations_unlock_circular_lock ( int input, int unlock_code ) {\nint rotation = 0;\nint input_digit, code_digit;\nwhile ( input || unlock_code ) {\ninput_digit = input % 10;\ncode_digit = unlock_code % 10;\nrotation += min ( abs ( input_digit - code_digit ), 10 - abs ( input_digit - code_digit ) );\ninput /= 10;\nunlock_code /= 10;\n}\nreturn rotation;\n}\n\n"
+    ],
+    "Enums": []
+}

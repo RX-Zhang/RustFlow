@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int middle_of_three_using_minimum_comparisons_1 ( int a, int b, int c ) ;\n"
+    ],
+    "Function Implementations": [
+        "int middle_of_three_using_minimum_comparisons_1 ( int a, int b, int c ) {\nif ( a > b ) {\nif ( b > c ) return b;\nelse if ( a > c ) return c;\nelse return a;\n}\nelse {\nif ( a > c ) return a;\nelse if ( b > c ) return c;\nelse return b;\n}\n}\n\n"
+    ],
+    "Enums": []
+}

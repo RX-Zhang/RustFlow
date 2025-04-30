@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int find_sum_even_factors_number ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int find_sum_even_factors_number ( int n ) {\nif ( n % 2 != 0 ) return 0;\nint res = 1;\nfor ( int i = 2;\ni <= sqrt ( n );\ni ++ ) {\nint count = 0, curr_sum = 1, curr_term = 1;\nwhile ( n % i == 0 ) {\ncount ++;\nn = n / i;\nif ( i == 2 && count == 1 ) curr_sum = 0;\ncurr_term *= i;\ncurr_sum += curr_term;\n}\nres *= curr_sum;\n}\nif ( n >= 2 ) res *= ( 1 + n );\nreturn res;\n}\n\n"
+    ],
+    "Enums": []
+}

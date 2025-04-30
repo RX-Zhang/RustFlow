@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int sum_k_th_group_odd_positive_numbers ( int k ) ;\n"
+    ],
+    "Function Implementations": [
+        "int sum_k_th_group_odd_positive_numbers ( int k ) {\nint cur = ( k * ( k - 1 ) ) + 1;\nint sum = 0;\nwhile ( k -- ) {\nsum += cur;\ncur += 2;\n}\nreturn sum;\n}\n\n"
+    ],
+    "Enums": []
+}

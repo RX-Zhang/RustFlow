@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int minimum_perimeter_n_blocks ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int minimum_perimeter_n_blocks ( int n ) {\nint l = sqrt ( n );\nint sq = l * l;\nif ( sq == n ) return l * 4;\nelse {\nlong int row = n / l;\nlong int perimeter = 2 * ( l + row );\nif ( n % l != 0 ) perimeter += 2;\nreturn perimeter;\n}\n}\n\n"
+    ],
+    "Enums": []
+}

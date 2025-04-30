@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_numbers_that_dont_contain_3 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_numbers_that_dont_contain_3 ( int n ) {\nif ( n < 3 ) return n;\nif ( n >= 3 && n < 10 ) return n - 1;\nint po = 1;\nwhile ( n / po > 9 ) po = po * 10;\nint msd = n / po;\nif ( msd != 3 ) return count_numbers_that_dont_contain_3 ( msd ) * count_numbers_that_dont_contain_3 ( po - 1 ) + count_numbers_that_dont_contain_3 ( msd ) + count_numbers_that_dont_contain_3 ( n % po );\nelse return count_numbers_that_dont_contain_3 ( msd * po - 1 );\n}\n\n"
+    ],
+    "Enums": []
+}

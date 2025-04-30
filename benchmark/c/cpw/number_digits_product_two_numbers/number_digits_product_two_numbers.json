@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int number_digits_product_two_numbers ( int a, int b ) ;\n"
+    ],
+    "Function Implementations": [
+        "int number_digits_product_two_numbers ( int a, int b ) {\nint count = 0;\nint p = abs ( a * b );\nif ( p == 0 ) return 1;\nwhile ( p > 0 ) {\ncount ++;\np = p / 10;\n}\nreturn count;\n}\n\n"
+    ],
+    "Enums": []
+}

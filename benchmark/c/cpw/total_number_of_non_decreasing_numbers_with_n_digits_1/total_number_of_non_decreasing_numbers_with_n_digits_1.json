@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int total_number_of_non_decreasing_numbers_with_n_digits_1 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int total_number_of_non_decreasing_numbers_with_n_digits_1 ( int n ) {\nint N = 10;\nlong long count = 1;\nfor ( int i = 1;\ni <= n;\ni ++ ) {\ncount *= ( N + i - 1 );\ncount /= i;\n}\nreturn count;\n}\n\n"
+    ],
+    "Enums": []
+}

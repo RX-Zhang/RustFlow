@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int zeckendorfs_theorem_non_neighbouring_fibonacci_representation ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int zeckendorfs_theorem_non_neighbouring_fibonacci_representation ( int n ) {\nif ( n == 0 || n == 1 ) return n;\nint f1 = 0, f2 = 1, f3 = 1;\nwhile ( f3 <= n ) {\nf1 = f2;\nf2 = f3;\nf3 = f1 + f2;\n}\nreturn f2;\n}\n\n"
+    ],
+    "Enums": []
+}

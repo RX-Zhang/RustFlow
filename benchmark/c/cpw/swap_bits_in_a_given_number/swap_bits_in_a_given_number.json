@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int swap_bits_in_a_given_number ( unsigned int x, unsigned int p1, unsigned int p2, unsigned int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int swap_bits_in_a_given_number ( unsigned int x, unsigned int p1, unsigned int p2, unsigned int n ) {\nunsigned int set1 = ( x >> p1 ) & ( ( 1U << n ) - 1 );\nunsigned int set2 = ( x >> p2 ) & ( ( 1U << n ) - 1 );\nunsigned int Xor = ( set1 ^ set2 );\nXor = ( Xor << p1 ) | ( Xor << p2 );\nunsigned int result = x ^ Xor;\nreturn result;\n}\n\n"
+    ],
+    "Enums": []
+}

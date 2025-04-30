@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_total_set_bits_in_all_numbers_from_1_to_n ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_total_set_bits_in_all_numbers_from_1_to_n ( int n ) {\nint i = 0;\nint ans = 0;\nwhile ( ( 1 << i ) <= n ) {\nbool k = 0;\nint change = 1 << i;\nfor ( int j = 0;\nj <= n;\nj ++ ) {\nans += k;\nif ( change == 1 ) {\nk = ! k;\nchange = 1 << i;\n}\nelse {\nchange --;\n}\n}\ni ++;\n}\nreturn ans;\n}\n\n"
+    ],
+    "Enums": []
+}

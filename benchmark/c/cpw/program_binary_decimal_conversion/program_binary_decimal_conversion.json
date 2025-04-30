@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int program_binary_decimal_conversion ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int program_binary_decimal_conversion ( int n ) {\nint num = n;\nint dec_value = 0;\nint base = 1;\nint temp = num;\nwhile ( temp ) {\nint last_digit = temp % 10;\ntemp = temp / 10;\ndec_value += last_digit * base;\nbase = base * 2;\n}\nreturn dec_value;\n}\n\n"
+    ],
+    "Enums": []
+}

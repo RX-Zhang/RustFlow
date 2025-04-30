@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int count_distinct_non_negative_pairs_x_y_satisfy_inequality_xx_yy_n_2_1 ( int n ) ;\n"
+    ],
+    "Function Implementations": [
+        "int count_distinct_non_negative_pairs_x_y_satisfy_inequality_xx_yy_n_2_1 ( int n ) {\nint x = 0, yCount, res = 0;\nfor ( yCount = 0;\nyCount * yCount < n;\nyCount ++ );\nwhile ( yCount != 0 ) {\nres += yCount;\nx ++;\nwhile ( yCount != 0 && ( x * x + ( yCount - 1 ) * ( yCount - 1 ) >= n ) ) yCount --;\n}\nreturn res;\n}\n\n"
+    ],
+    "Enums": []
+}

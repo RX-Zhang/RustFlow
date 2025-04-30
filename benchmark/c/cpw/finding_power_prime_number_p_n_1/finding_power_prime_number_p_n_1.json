@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int finding_power_prime_number_p_n_1 ( int n, int p ) ;\n"
+    ],
+    "Function Implementations": [
+        "int finding_power_prime_number_p_n_1 ( int n, int p ) {\nint ans = 0;\nint temp = p;\nwhile ( temp <= n ) {\nans += n / temp;\ntemp = temp * p;\n}\nreturn ans;\n}\n\n"
+    ],
+    "Enums": []
+}

@@ -1,0 +1,20 @@
+{
+    "Includes": [
+        "#include <stdio.h>\n",
+        "#include <math.h>\n",
+        "#include <stdlib.h>\n",
+        "#include <limits.h>\n",
+        "#include <stdbool.h>\n"
+    ],
+    "Defines": [],
+    "TypeDefs": [],
+    "Globals": [],
+    "Structs": [],
+    "Function Declarations": [
+        "int program_check_plus_perfect_number ( int x ) ;\n"
+    ],
+    "Function Implementations": [
+        "int program_check_plus_perfect_number ( int x ) {\nint temp = x;\nint n = 0;\nwhile ( x != 0 ) {\nx /= 10;\nn ++;\n}\nx = temp;\nint sum = 0;\nwhile ( x != 0 ) {\nsum += pow ( x % 10, n );\nx /= 10;\n}\nreturn ( sum == temp );\n}\n\n"
+    ],
+    "Enums": []
+}
